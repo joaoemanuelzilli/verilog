@@ -1,0 +1,7 @@
+Testando NOT Gate
+Time	in	out
+0	0	1
+10000	1	0
+
+Teste NOT concluído!
+tb_gnot.v:23: $finish called at 20000 (1ps)

@@ -1,0 +1,9 @@
+Testando OR Gate
+Time	a	b	out
+0	0	0	0
+10000	0	1	1
+20000	1	0	1
+30000	1	1	1
+
+Teste OR concluído!
+tb_gor.v:26: $finish called at 40000 (1ps)

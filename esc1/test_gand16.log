@@ -1,0 +1,11 @@
+Testando AND16 Gate
+Time	a (hex)	b (hex)	out (hex)
+0	0000	0000	0000
+10000	ffff	ffff	ffff
+20000	ffff	0000	0000
+30000	aaaa	5555	0000
+40000	1234	abcd	0204
+50000	f0f0	0f0f	0000
+
+Teste AND16 concluído!
+tb_gand16.v:28: $finish called at 60000 (1ps)

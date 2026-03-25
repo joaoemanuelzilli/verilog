@@ -1,0 +1,11 @@
+Testando MUX16 2:1
+Time	a (hex)	b (hex)	sel	out (hex)
+0	1234	abcd	0	1234
+10000	1234	abcd	1	abcd
+20000	0000	ffff	0	0000
+30000	0000	ffff	1	ffff
+40000	aaaa	5555	0	aaaa
+50000	aaaa	5555	1	5555
+
+Teste MUX16 concluído!
+tb_mux16.v:30: $finish called at 60000 (1ps)

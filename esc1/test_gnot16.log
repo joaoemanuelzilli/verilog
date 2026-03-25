@@ -1,0 +1,11 @@
+Testando NOT16 Gate
+Time	in (hex)		out (hex)
+0	0000		ffff
+10000	ffff		0000
+20000	aaaa		5555
+30000	5555		aaaa
+40000	1234		edcb
+50000	abcd		5432
+
+Teste NOT16 concluído!
+tb_gnot16.v:27: $finish called at 60000 (1ps)

@@ -1,0 +1,13 @@
+Testando MUX 2:1
+Time	a	b	sel	out
+0	0	0	0	0
+10000	0	1	0	0
+20000	1	0	0	1
+30000	1	1	0	1
+40000	0	0	1	0
+50000	0	1	1	1
+60000	1	0	1	0
+70000	1	1	1	1
+
+Teste MUX concluído!
+tb_mux.v:31: $finish called at 80000 (1ps)

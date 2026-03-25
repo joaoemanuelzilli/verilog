@@ -1,0 +1,13 @@
+Testando MUX4WAY16
+Time	a	b	c	d	sel	out
+0	1111	2222	3333	4444	00	1111
+10000	1111	2222	3333	4444	01	2222
+20000	1111	2222	3333	4444	10	3333
+30000	1111	2222	3333	4444	11	4444
+40000	aaaa	bbbb	cccc	dddd	00	aaaa
+50000	aaaa	bbbb	cccc	dddd	01	bbbb
+60000	aaaa	bbbb	cccc	dddd	10	cccc
+70000	aaaa	bbbb	cccc	dddd	11	dddd
+
+Teste MUX4WAY16 concluído!
+tb_mux4way16.v:47: $finish called at 80000 (1ps)
