@@ -1,0 +1,30 @@
+# Hack Instruction Encoding
+
+C-instruction format: 111a cccccc ddd jjj
+
+For D=D+A:
+- a = 0 (use A, not M)
+- comp = 000010 (D+A)
+- dest = 010 (D)
+- jump = 000 (no jump)
+
+Binary: 1110 0000 10 010 000 = 1110000010010000
+
+For M=D:
+- a = 0 (but we write to M)
+- comp = 001100 (D)
+- dest = 001 (M)
+- jump = 000 (no jump)
+
+Binary: 1110 0011 00 001 000 = 1110001100001000
+
+Wait - to write M, we need a=1? Let me check...
+Actually, a-bit only affects the ALU input (A or M[A])
+For M=D, we want comp=D (001100), dest=M (001)
+
+Actually looking at Hack spec:
+comp field for D is: 001100
+But in our encoding: 111a cccccc ddd jjj
+For M=D with a=0: 1110 001100 001 000
+
+Let me verify what the test expects...
